@@ -52,12 +52,12 @@
         If TxtCodigoModulo.Text = "" Then
             MsgBox("Ingresese Codigo Modulo que desea eliminar", MsgBoxStyle.Critical)
             TxtCodigoModulo.Focus()
-        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text)) = False Then
+        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text) = False) Then
             MsgBox("Registro no encontrado", MsgBoxStyle.Critical)
-
+            TxtCodigoModulo.Focus()
         Else
             Me.ModulosTableAdapter.BorrarModulo(TxtCodigoModulo.Text)
-            MsgBox("Registro borrado", MsgBoxStyle.Information)
+            MsgBox("Registro eliminado", MsgBoxStyle.Information)
             Me.ModulosTableAdapter1.Fill(Me.PuntoNETDataSet2.modulos)
 
         End If
@@ -67,8 +67,9 @@
         If TxtCodigoModulo.Text = "" Then
             MsgBox("Ingresese Codigo Modulo que desea modificar", MsgBoxStyle.Critical)
             TxtCodigoModulo.Focus()
-        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text)) = False Then
+        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text) = False) Then
             MsgBox("Registro no encontrado", MsgBoxStyle.Critical)
+            TxtCodigoModulo.Focus()
         Else
             Me.ModulosTableAdapter.ModificarRegistro(TxtNombreModulo.Text, TxtCodigoModulo.Text)
             MsgBox("Registro Modificado", MsgBoxStyle.Information)
@@ -81,9 +82,9 @@
             MsgBox("Ingresese Codigo Modulo que desea buscar", MsgBoxStyle.Critical)
             TxtCodigoModulo.Focus()
 
-        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text)) = False Then
+        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text) = False) Then
             MsgBox("Registro no encontrado", MsgBoxStyle.Critical)
-
+            TxtCodigoModulo.Focus()
         Else
             MsgBox("Registro encontrado", MsgBoxStyle.Information)
             Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text)
@@ -111,9 +112,9 @@
         If TxtCodigoModulo.Text = "" Then
             MsgBox("Ingresese Codigo Modulo que desea buscar", MsgBoxStyle.Critical)
             TxtCodigoModulo.Focus()
-
-        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text)) = False Then
+        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text) = False) Then
             MsgBox("Registro no encontrado", MsgBoxStyle.Critical)
+            TxtCodigoModulo.Focus()
 
         Else
             MsgBox("Registro encontrado", MsgBoxStyle.Information)
@@ -127,8 +128,9 @@
             MsgBox("Ingresese Codigo Modulo que desea modificar", MsgBoxStyle.Critical)
             TxtCodigoModulo.Focus()
 
-        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text)) = False Then
+        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text) = False) Then
             MsgBox("Registro no encontrado", MsgBoxStyle.Critical)
+            TxtCodigoModulo.Focus()
 
         Else
             Me.ModulosTableAdapter.ModificarRegistro(TxtNombreModulo.Text, TxtCodigoModulo.Text)
@@ -141,9 +143,13 @@
         If TxtCodigoModulo.Text = "" Then
             MsgBox("Ingresese Codigo Modulo que desea eliminar", MsgBoxStyle.Critical)
             TxtCodigoModulo.Focus()
-        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text)) = False Then
+        ElseIf TxtCodigoModulo.Text = (Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text) = False) Then
             MsgBox("Registro no encontrado", MsgBoxStyle.Critical)
-        Else Me.ModulosTableAdapter1.Fill(Me.PuntoNETDataSet2.modulos)
+            TxtCodigoModulo.Focus()
+        Else
+            Me.ModulosTableAdapter.BorrarModulo(TxtCodigoModulo.Text)
+            MsgBox("Registro eliminado", MsgBoxStyle.Information)
+            Me.ModulosTableAdapter1.Fill(Me.PuntoNETDataSet2.modulos)
         End If
     End Sub
 

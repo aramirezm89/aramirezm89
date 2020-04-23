@@ -10,3 +10,16 @@ C:\Users\Antonio\Desktop\AIEP\SEGUNDO AÑO\.NET\CLASES\TAREAS\PrimeraTarea\Prome
 C:\Users\Antonio\Desktop\AIEP\SEGUNDO AÑO\.NET\CLASES\TAREAS\PrimeraTarea\PromedioAlumno\obj\Debug\PromedioAlumno.exe
 C:\Users\Antonio\Desktop\AIEP\SEGUNDO AÑO\.NET\CLASES\TAREAS\PrimeraTarea\PromedioAlumno\obj\Debug\PromedioAlumno.xml
 C:\Users\Antonio\Desktop\AIEP\SEGUNDO AÑO\.NET\CLASES\TAREAS\PrimeraTarea\PromedioAlumno\obj\Debug\PromedioAlumno.pdb
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\bin\Debug\PromedioAlumno.exe.config
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\bin\Debug\PromedioAlumno.exe
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\bin\Debug\PromedioAlumno.pdb
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\bin\Debug\PromedioAlumno.xml
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\obj\Debug\PromedioAlumno.vbprojAssemblyReference.cache
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\obj\Debug\PromedioAlumno.Modulo.resources
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\obj\Debug\PromedioAlumno.PromedioDeNotas.resources
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\obj\Debug\PromedioAlumno.Resources.resources
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\obj\Debug\PromedioAlumno.vbproj.GenerateResource.cache
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\obj\Debug\PromedioAlumno.vbproj.CoreCompileInputs.cache
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\obj\Debug\PromedioAlumno.exe
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\obj\Debug\PromedioAlumno.xml
+C:\Users\Antonio\Source\Repos\aramirezm89\PromedioAlumno\obj\Debug\PromedioAlumno.pdb
