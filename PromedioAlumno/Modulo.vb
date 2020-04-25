@@ -40,11 +40,9 @@
             MsgBox("Ingresese Nombre Modulo que desea ingresar", MsgBoxStyle.Critical)
             TxtNombreModulo.Focus()
         Else
-
             Me.ModulosTableAdapter.InsertarRegistro(TxtCodigoModulo.Text, TxtNombreModulo.Text)
             MsgBox("Registro ingresado", MsgBoxStyle.Information)
             Me.ModulosTableAdapter1.Fill(Me.PuntoNETDataSet2.modulos)
-
         End If
     End Sub
 
@@ -158,6 +156,7 @@
         opcion = MessageBox.Show("Realmente desea salir", "Salir del programa", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If opcion = (DialogResult.Yes) Then
             Me.Close()
+            End
         End If
     End Sub
 End Class

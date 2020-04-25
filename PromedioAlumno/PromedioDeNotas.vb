@@ -113,13 +113,6 @@
 
     End Sub
 
-    Private Sub PromedioDeNotas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        Me.ModulosTableAdapter.Fill(Me.PuntoNETDataSet.modulos)
-
-    End Sub
-
-
 
     Private Sub TxtTelefono_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtTelefono.KeyPress
         If Char.IsNumber(e.KeyChar) Then
