@@ -78,7 +78,7 @@
             Dim promedio As Double = suma / 3
 
 
-            TxtPromedio.Text = Math.Round(Convert.ToDouble(promedio), 1)
+            TxtPromedio.Text = Math.Round(promedio, 1)
             MsgBox("El promedio de notas de: " + TxtNombre.Text + " es: " + TxtPromedio.Text, MsgBoxStyle.Information)
 
             If (promedio < 4) Then
@@ -136,6 +136,12 @@
     Private Sub MantenedorMosulosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MantenedorMosulosToolStripMenuItem.Click
         Modulo.Show()
         Me.Hide()
+
+    End Sub
+
+    Private Sub PromedioDeNotas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'PuntoNETDataSet2.modulos' Puede moverla o quitarla según sea necesario.
+        Me.ModulosTableAdapter1.Fill(Me.PuntoNETDataSet2.modulos)
 
     End Sub
 End Class

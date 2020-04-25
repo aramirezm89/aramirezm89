@@ -48,11 +48,23 @@ Partial Class PromedioDeNotas
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MantenedorMosulosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.AlumnosTableAdapter1 = New PromedioAlumno.PuntoNETDataSet1TableAdapters.alumnosTableAdapter()
+        Me.PuntoNETDataSet2 = New PromedioAlumno.PuntoNETDataSet2()
+        Me.PuntoNETDataSet2BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ModulosBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ModulosTableAdapter1 = New PromedioAlumno.PuntoNETDataSet2TableAdapters.modulosTableAdapter()
+        Me.ModulosBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ModulosBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.ModulosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PuntoNETDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.PuntoNETDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PuntoNETDataSet2BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ModulosBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ModulosBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ModulosBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnCerrar
@@ -190,8 +202,7 @@ Partial Class PromedioDeNotas
         'CmbModulo
         '
         Me.CmbModulo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.CmbModulo.DataSource = Me.ModulosBindingSource
-        Me.CmbModulo.DisplayMember = "nombre_modulo"
+        Me.CmbModulo.DataSource = Me.ModulosBindingSource3
         Me.CmbModulo.FormattingEnabled = True
         Me.CmbModulo.Location = New System.Drawing.Point(159, 136)
         Me.CmbModulo.MaxLength = 35
@@ -292,6 +303,39 @@ Partial Class PromedioDeNotas
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
+        'AlumnosTableAdapter1
+        '
+        Me.AlumnosTableAdapter1.ClearBeforeFill = True
+        '
+        'PuntoNETDataSet2
+        '
+        Me.PuntoNETDataSet2.DataSetName = "PuntoNETDataSet2"
+        Me.PuntoNETDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'PuntoNETDataSet2BindingSource
+        '
+        Me.PuntoNETDataSet2BindingSource.DataSource = Me.PuntoNETDataSet2
+        Me.PuntoNETDataSet2BindingSource.Position = 0
+        '
+        'ModulosBindingSource1
+        '
+        Me.ModulosBindingSource1.DataMember = "modulos"
+        Me.ModulosBindingSource1.DataSource = Me.PuntoNETDataSet2BindingSource
+        '
+        'ModulosTableAdapter1
+        '
+        Me.ModulosTableAdapter1.ClearBeforeFill = True
+        '
+        'ModulosBindingSource2
+        '
+        Me.ModulosBindingSource2.DataMember = "modulos"
+        Me.ModulosBindingSource2.DataSource = Me.PuntoNETDataSet2BindingSource
+        '
+        'ModulosBindingSource3
+        '
+        Me.ModulosBindingSource3.DataMember = "modulos"
+        Me.ModulosBindingSource3.DataSource = Me.PuntoNETDataSet2BindingSource
+        '
         'PromedioDeNotas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -316,6 +360,11 @@ Partial Class PromedioDeNotas
         CType(Me.PuntoNETDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.PuntoNETDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PuntoNETDataSet2BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ModulosBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ModulosBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ModulosBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -345,4 +394,11 @@ Partial Class PromedioDeNotas
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MantenedorMosulosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents AlumnosTableAdapter1 As PuntoNETDataSet1TableAdapters.alumnosTableAdapter
+    Friend WithEvents PuntoNETDataSet2BindingSource As BindingSource
+    Friend WithEvents PuntoNETDataSet2 As PuntoNETDataSet2
+    Friend WithEvents ModulosBindingSource1 As BindingSource
+    Friend WithEvents ModulosTableAdapter1 As PuntoNETDataSet2TableAdapters.modulosTableAdapter
+    Friend WithEvents ModulosBindingSource2 As BindingSource
+    Friend WithEvents ModulosBindingSource3 As BindingSource
 End Class
