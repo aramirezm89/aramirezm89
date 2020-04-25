@@ -197,9 +197,9 @@ Partial Class Modulo
         'BtnModificar
         '
         Me.BtnModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnModificar.Location = New System.Drawing.Point(96, 269)
+        Me.BtnModificar.Location = New System.Drawing.Point(90, 269)
         Me.BtnModificar.Name = "BtnModificar"
-        Me.BtnModificar.Size = New System.Drawing.Size(105, 33)
+        Me.BtnModificar.Size = New System.Drawing.Size(111, 33)
         Me.BtnModificar.TabIndex = 16
         Me.BtnModificar.Text = "M&odificar"
         Me.BtnModificar.UseVisualStyleBackColor = True
@@ -227,9 +227,9 @@ Partial Class Modulo
         'BtnInsert
         '
         Me.BtnInsert.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnInsert.Location = New System.Drawing.Point(96, 186)
+        Me.BtnInsert.Location = New System.Drawing.Point(90, 186)
         Me.BtnInsert.Name = "BtnInsert"
-        Me.BtnInsert.Size = New System.Drawing.Size(105, 33)
+        Me.BtnInsert.Size = New System.Drawing.Size(111, 33)
         Me.BtnInsert.TabIndex = 13
         Me.BtnInsert.Text = "I&ngresar Registro"
         Me.BtnInsert.UseVisualStyleBackColor = True

@@ -39,11 +39,15 @@
         ElseIf TxtNombreModulo.Text = "" Then
             MsgBox("Ingresese Nombre Modulo que desea ingresar", MsgBoxStyle.Critical)
             TxtNombreModulo.Focus()
+        ElseIf Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text) Then
+            MsgBox("Codigo modulo ya existe en la base de datos", MsgBoxStyle.Critical)
+
         Else
             Me.ModulosTableAdapter.InsertarRegistro(TxtCodigoModulo.Text, TxtNombreModulo.Text)
             MsgBox("Registro ingresado", MsgBoxStyle.Information)
             Me.ModulosTableAdapter1.Fill(Me.PuntoNETDataSet2.modulos)
         End If
+
     End Sub
 
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
@@ -97,6 +101,8 @@
         ElseIf TxtNombreModulo.Text = "" Then
             MsgBox("Ingresese Nombre Modulo que desea ingresar", MsgBoxStyle.Critical)
             TxtNombreModulo.Focus()
+        ElseIf Me.ModulosTableAdapter1.BuscarModulo2(PuntoNETDataSet2.modulos, TxtCodigoModulo.Text) Then
+            MsgBox("Codigo modulo ya existe en la base de datos", MsgBoxStyle.Critical)
         Else
 
             Me.ModulosTableAdapter.InsertarRegistro(TxtCodigoModulo.Text, TxtNombreModulo.Text)
@@ -159,4 +165,6 @@
             End
         End If
     End Sub
+
 End Class
+
