@@ -1,0 +1,6 @@
+C:\Users\Antonio\Source\Repos\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\Antonio\Source\Repos\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\Antonio\Source\Repos\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\Antonio\Source\Repos\Calculadora\obj\Debug\CalculadoraSwitch.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\Source\Repos\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\Antonio\Source\Repos\Calculadora\obj\Debug\Calculadora.pdb
